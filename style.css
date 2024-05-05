@@ -1,0 +1,81 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.wrapper{
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    width:100vw;
+    height: 100vh
+}
+.game-info{
+    border:solid 1px rgb(146, 139, 139);
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: .5rem 3rem;
+    position: absolute;
+    text-align: center;
+}
+.tic-tie-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    display: grid;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    border-radius: 2rem;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    border:solid 1px rgb(146, 139, 139);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: .5rem 3rem;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(59, 240, 59, 0.814);
+}
